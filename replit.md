@@ -90,7 +90,21 @@ The landing page serves as a marketing tool to attract potential customers and v
 
 Preferred communication style: Simple, everyday language.
 
-## Changelog
+## Recent Changes
 
-Changelog:
-- June 24, 2025. Initial setup
+- June 24, 2025: Initial FoodXL landing page setup with basic structure
+- June 24, 2025: Updated design to use full brand color palette (#95c8a0, #ff0000, #000000)
+- June 24, 2025: Replaced text logo with FoodXL brand logo image
+- June 24, 2025: Implemented bold Viral Loops-inspired styling with:
+  - High-contrast gradient hero section (green to red)
+  - Black "How It Works" section with gradient step icons
+  - Green gradient benefits section with glassmorphism cards
+  - Red gradient vendor section with white text
+  - Dramatic color blocking and section contrasts for visual impact
+
+## User Preferences
+
+- Preferred communication style: Simple, everyday language
+- Design inspiration: Viral Loops bold color application and high-contrast sections
+- Logo: Uses FoodXL brand logo with chef hat icon
+- Color strategy: Maximum visual impact with strategic gradient usage
