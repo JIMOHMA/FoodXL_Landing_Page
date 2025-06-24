@@ -43,10 +43,14 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
-    color: #95c8a0;
-    font-weight: 700;
-    font-size: 1.8rem;
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
 }
 
 .nav-menu {
@@ -63,7 +67,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #95c8a0;
+    color: #ff0000;
 }
 
 .nav-cta {
@@ -86,7 +90,7 @@ body {
 
 /* Buttons */
 .cta-button {
-    background: #95c8a0;
+    background: #ff0000;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -102,25 +106,25 @@ body {
 }
 
 .cta-button:hover {
-    background: #7db085;
+    background: #cc0000;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(149, 200, 160, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
 }
 
 .cta-button.primary {
-    background: #95c8a0;
+    background: #ff0000;
     font-size: 1.1rem;
     padding: 16px 32px;
 }
 
 .cta-button.secondary {
     background: transparent;
-    color: #95c8a0;
-    border: 2px solid #95c8a0;
+    color: #ff0000;
+    border: 2px solid #ff0000;
 }
 
 .cta-button.secondary:hover {
-    background: #95c8a0;
+    background: #ff0000;
     color: white;
 }
 
@@ -129,10 +133,20 @@ body {
     justify-content: center;
 }
 
+.cta-button.green {
+    background: #95c8a0;
+    color: white;
+}
+
+.cta-button.green:hover {
+    background: #7db085;
+    box-shadow: 0 4px 12px rgba(149, 200, 160, 0.3);
+}
+
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #f8fdf9 0%, #ffffff 100%);
+    background: linear-gradient(135deg, rgba(149, 200, 160, 0.1) 0%, #ffffff 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -181,7 +195,7 @@ body {
 }
 
 .feature-item i {
-    color: #95c8a0;
+    color: #ff0000;
     font-size: 1.2rem;
 }
 
@@ -213,7 +227,7 @@ body {
 
 .food-card i {
     font-size: 2.5rem;
-    color: #95c8a0;
+    color: #ff0000;
     margin-bottom: 1rem;
 }
 
@@ -263,7 +277,7 @@ body {
 .step-icon {
     width: 80px;
     height: 80px;
-    background: #95c8a0;
+    background: #ff0000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -300,7 +314,7 @@ body {
 /* Benefits Section */
 .benefits {
     padding: 80px 0;
-    background: #f8fdf9;
+    background: rgba(149, 200, 160, 0.1);
 }
 
 .benefits-grid {
@@ -325,7 +339,7 @@ body {
 .benefit-icon {
     width: 60px;
     height: 60px;
-    background: #95c8a0;
+    background: #ff0000;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -469,7 +483,7 @@ body {
 }
 
 .faq-question:hover {
-    color: #95c8a0;
+    color: #ff0000;
 }
 
 .faq-question i {
@@ -510,10 +524,11 @@ body {
     margin-bottom: 3rem;
 }
 
-.footer-brand h3 {
-    color: #95c8a0;
-    font-size: 1.8rem;
+.footer-logo {
+    height: 50px;
+    width: auto;
     margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
@@ -542,7 +557,7 @@ body {
 }
 
 .footer-column a:hover {
-    color: #95c8a0;
+    color: #ff0000;
 }
 
 .social-links {
@@ -562,7 +577,7 @@ body {
 }
 
 .social-links a:hover {
-    background: #95c8a0;
+    background: #ff0000;
     transform: translateY(-2px);
 }
 
@@ -677,7 +692,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #95c8a0;
+    border-color: #ff0000;
 }
 
 .success-message {
