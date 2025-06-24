@@ -43,14 +43,10 @@ body {
     align-items: center;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    height: 60px;
-    width: auto;
+.nav-logo h2 {
+    color: #95c8a0;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 .nav-menu {
@@ -67,7 +63,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ff0000;
+    color: #95c8a0;
 }
 
 .nav-cta {
@@ -90,7 +86,7 @@ body {
 
 /* Buttons */
 .cta-button {
-    background: #ff0000;
+    background: #95c8a0;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -106,25 +102,25 @@ body {
 }
 
 .cta-button:hover {
-    background: #cc0000;
+    background: #7db085;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(149, 200, 160, 0.3);
 }
 
 .cta-button.primary {
-    background: #ff0000;
+    background: #95c8a0;
     font-size: 1.1rem;
     padding: 16px 32px;
 }
 
 .cta-button.secondary {
     background: transparent;
-    color: #ff0000;
-    border: 2px solid #ff0000;
+    color: #95c8a0;
+    border: 2px solid #95c8a0;
 }
 
 .cta-button.secondary:hover {
-    background: #ff0000;
+    background: #95c8a0;
     color: white;
 }
 
@@ -133,52 +129,13 @@ body {
     justify-content: center;
 }
 
-.cta-button.green {
-    background: #95c8a0;
-    color: white;
-}
-
-.cta-button.green:hover {
-    background: #7db085;
-    box-shadow: 0 4px 12px rgba(149, 200, 160, 0.3);
-}
-
-.cta-button.hero-cta {
-    background: white;
-    color: #ff0000;
-    font-size: 1.1rem;
-    padding: 16px 32px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button.hero-cta:hover {
-    background: #f5f5f5;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
-.cta-button.vendor-cta {
-    background: white;
-    color: #ff0000;
-    font-size: 1.1rem;
-    padding: 16px 32px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button.vendor-cta:hover {
-    background: #f5f5f5;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #95c8a0 0%, #ff0000 100%);
+    background: linear-gradient(135deg, #f8fdf9 0%, #ffffff 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .hero-container {
@@ -196,13 +153,12 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #000000;
 }
 
 .hero-subtitle {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #666666;
     margin-bottom: 2.5rem;
     line-height: 1.6;
 }
@@ -220,12 +176,12 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #666666;
     font-weight: 500;
 }
 
 .feature-item i {
-    color: white;
+    color: #95c8a0;
     font-size: 1.2rem;
 }
 
@@ -243,15 +199,12 @@ body {
 }
 
 .food-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: white;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    color: white;
 }
 
 .food-card:hover {
@@ -260,7 +213,7 @@ body {
 
 .food-card i {
     font-size: 2.5rem;
-    color: white;
+    color: #95c8a0;
     margin-bottom: 1rem;
 }
 
@@ -292,16 +245,7 @@ body {
 /* How It Works */
 .how-it-works {
     padding: 80px 0;
-    background: #000000;
-    color: white;
-}
-
-.how-it-works .section-title {
-    color: white;
-}
-
-.how-it-works .section-subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    background: #ffffff;
 }
 
 .steps {
@@ -319,14 +263,13 @@ body {
 .step-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #95c8a0 0%, #ff0000 100%);
+    background: #95c8a0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 24px rgba(149, 200, 160, 0.3);
 }
 
 .step:hover .step-icon {
@@ -342,11 +285,11 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: white;
+    color: #000000;
 }
 
 .step p {
-    color: rgba(255, 255, 255, 0.8);
+    color: #666666;
     line-height: 1.6;
 }
 
@@ -357,12 +300,7 @@ body {
 /* Benefits Section */
 .benefits {
     padding: 80px 0;
-    background: linear-gradient(135deg, #95c8a0 0%, #7db085 100%);
-    color: white;
-}
-
-.benefits .section-title {
-    color: white;
+    background: #f8fdf9;
 }
 
 .benefits-grid {
@@ -372,25 +310,22 @@ body {
 }
 
 .benefit-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: white;
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    color: white;
 }
 
 .benefit-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .benefit-icon {
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #95c8a0;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -407,23 +342,23 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: white;
+    color: #000000;
 }
 
 .benefit-card p {
-    color: rgba(255, 255, 255, 0.9);
+    color: #666666;
     line-height: 1.6;
 }
 
 /* Environmental Section */
 .environmental {
     padding: 80px 0;
-    background: #ffffff;
-    color: #000000;
+    background: linear-gradient(135deg, #95c8a0 0%, #7db085 100%);
+    color: white;
 }
 
 .environmental .section-title {
-    color: #000000;
+    color: white;
 }
 
 .env-benefits {
@@ -440,25 +375,24 @@ body {
 .env-benefit i {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: #95c8a0;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .env-benefit h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #000000;
 }
 
 .env-benefit p {
-    color: #666666;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
 /* Vendor Section */
 .vendor {
     padding: 80px 0;
-    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    background: #000000;
     color: white;
 }
 
@@ -493,15 +427,14 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background: rgba(149, 200, 160, 0.1);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(149, 200, 160, 0.2);
 }
 
 .vendor-benefit i {
     font-size: 1.5rem;
-    color: white;
+    color: #95c8a0;
 }
 
 .vendor-benefit span {
@@ -536,7 +469,7 @@ body {
 }
 
 .faq-question:hover {
-    color: #ff0000;
+    color: #95c8a0;
 }
 
 .faq-question i {
@@ -577,11 +510,10 @@ body {
     margin-bottom: 3rem;
 }
 
-.footer-logo {
-    height: 50px;
-    width: auto;
+.footer-brand h3 {
+    color: #95c8a0;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
@@ -610,7 +542,7 @@ body {
 }
 
 .footer-column a:hover {
-    color: #ff0000;
+    color: #95c8a0;
 }
 
 .social-links {
@@ -630,7 +562,7 @@ body {
 }
 
 .social-links a:hover {
-    background: #ff0000;
+    background: #95c8a0;
     transform: translateY(-2px);
 }
 
@@ -745,7 +677,7 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #ff0000;
+    border-color: #95c8a0;
 }
 
 .success-message {
