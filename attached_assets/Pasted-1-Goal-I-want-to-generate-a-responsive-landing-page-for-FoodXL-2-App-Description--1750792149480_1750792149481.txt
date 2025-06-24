@@ -1,0 +1,97 @@
+1. Goal
+    - "I want to generate a responsive landing page for FoodXL."
+
+2. App Description:
+    Name of the app: FoodXL
+
+    Description: What makes it unique, Who it's for (target audience), What action users should take (e.g. sign up, download, order food): "FoodXL is your Bulk food ordering muliti vendor platform, which connects you to everyday meals, pastries and full-scale event food solutions. Whether you are craving something special , or planning a celebration, or sending someone a sweet surprise, FoodXL helps you find trusted vendors, place orders seamlessly, and enjoy exceptional service every time. Our mission is to make Bulk food discovery, delivery, and celebration effortless.
+    FoodXL is Perfect for dinner parties, special events, family meals, and business needs.
+
+    Whether you're hosting a celebration, meal prepping for the week, or feeding a crowd, FoodXL makes bulk food ordering effortless. Choose from a wide range of soups, stews, rice dishes, sauces, drinks, and more — available in practical litre-based quantities."
+
+3. Layout Structure
+
+Hero section with a CTA (call-to-action): 
+    - HEADLINE: From Food Cravings to Party Platters — We’ve Got You Covered.
+    - SUB-HEADLINE: The smartest way to order bulk meals, plan food for events, and enjoy  pastries — all in one app.
+    - PRIMARY CTA BUTTONS: Join the waitlist
+
+How It Works: 
+    - FoodXL is the easiest way to get the food you love delivered to you in bulk
+    - FoodXL brings hundreds of restaurants to your fingertips. Browse for inspiration or search for your favorite cuisine—when you find the perfect meal, simply tap to add it to your order
+    - Track & Enjoy your order
+
+CTA: Add CTA button after this: Join the waitlist
+
+CUSTOMER BENEFITS & SPOTLIGHT:
+    - Cost Savings – Bulk purchases often come with discounts, making it a more economical choice.
+    - Convenience – No need for meal prep—just heat and enjoy, saving time and effort
+    - Consistency & Quality – Get the same great taste every time, without worrying about variations in preparation
+    - Less Waste – Ordering in bulk reduces packaging waste and ensures efficient meal planning.
+    - Perfect for Events & Gatherings – Ideal for parties, meetings, and celebrations where food needs to be ready to serve
+    - Time Efficiency – No daily ordering or shopping—just one bulk purchase to cover multiple meals
+    - Customizable Options – Choose from diverse menus to suit different dietary needs and preferences
+    - Bulk food orders , made simple –
+    - Event Food , stress fress
+    - Smart Matching – not sure what to book, we will match you with the best vendor  based on your needs, location and preferences
+    - Real time order and delivery tracker 
+    - Secure payments – pay you way different options 
+
+ENVIROMENTAL BENEFITS:  
+    - Reduces Packaging Waste – Bulk orders minimize individual packaging, cutting down on plastic and disposable materials   
+    - Lower Carbon Footprint – Fewer deliveries mean less fuel consumption and fewer emissions, making bulk orders an eco-friendly option 
+    - Efficient Resource Use – Large-scale meal preparation often results in less food waste compared to individual cooking   
+    - Supports Sustainable Practices – Many bulk meal providers source ingredients responsibly and optimize production to minimize waste  
+    - Less Food Waste – Pre-portioned ready meals reduce the risk of overbuying or spoilage, ensuring more food is consumed rather than wasted.   
+
+VENDOR BENEFITS & SPOTLIGHT:
+    - FoodXL helps you reach new customers, manage your business, and scale with ease.
+    - Join the Bulk Revolution! Are you a vendor looking to expand your reach and maximize sales? Partner with us to connect with bulk buyers who crave quality and value. Sign up today and start growing your business with effortless orders and satisfied customers!"
+    - Unlock Growth Potential with Bulk Ordering" Invest in a thriving marketplace where efficiency meets demand. Our platform connects vendors with high-volume buyers, streamlining bulk transactions for maximum profitability. Join a network designed for scalability, reliability, and long-term success—sign up today and seize new business opportunities
+    - "Partner with Us—Expand Your Reach in Bulk Ordering" Join a dynamic marketplace designed to connect vendors with high-volume buyers. Discover seamless order management, increased profitability, and a streamlined network that enhances efficiency and growth. Let’s collaborate to unlock new opportunities—schedule a meeting today 
+    - More Traffic , Control Over Price , Free Compliance and Insurance reminder notifications
+
+
+CTA: Be a partner 
+    Collect the following information in a form: 
+        – First name
+        - Last name
+        - Email
+        - Phone number
+        - Business name
+        - Business address
+        - Local council 
+
+FAQ:
+    - WHAT IS FOODXL? 
+        "FoodXL is the easiest way to get the food you love delivered to you in bulk. FoodXL brings hundreds of restaurants to your fingertips. Browse for inspiration or search for your favorite cuisine—when you find the perfect meal, simply tap to add it to your order."
+
+    - CAN I USE FOODXL FOR EVENTS ?
+        "Yes! Book from reliable and vetted vendors for weddings , birthdays, office events and more."
+
+    - DO YOU DELIVER CAKES & PASTRIES ?
+        "Yes! Most of our pastry partners offer same day or scheduled delivery."
+
+    - HOW DO I BECOME A PARTNER/VENDOR
+        "Sign up via “Become a Partner” on our site or app and follow the onboarding process."
+
+    - WHAT CITIES DO YOU SERVE
+        "We’re launching in [Insert City/Region] with plans to expand quickly. Stay tuned!"
+
+    - HOW DO I PAY?
+        "You can pay securely using debit/credit cards, mobile wallets, and other digital options."
+
+
+4. Footer with social links
+
+5. Design Preferences
+    - Color palette or branding style: Colors to use: #95c8a0, #ff0000, #000000
+
+6. Font preferences (modern)
+    - Font style like Uber or Doordash
+
+7. Mobile-first or responsive? Make it responsive for all screen sizes and apply mobile-first approach.
+
+8. Tech Stack: Just HTML/CSS and Javascript if needed for animation
+
+9. Inspiration: Use the following websites as inspiration to creating the best possible converting design for FoodXL.
