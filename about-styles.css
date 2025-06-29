@@ -15,8 +15,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
     z-index: 1;
 }
 
@@ -24,12 +27,17 @@
 .hero-image-right {
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    max-width: 400px;
+    height: 500px;
 }
 
 .hero-image-left img,
 .hero-image-right img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -342,11 +350,15 @@
 /* Responsive Design for About Page */
 @media (max-width: 968px) {
     .hero-images-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
     
+    .hero-image-left,
     .hero-image-right {
-        display: none;
+        max-width: 350px;
+        height: 300px;
     }
     
     .flavor-content {
@@ -383,6 +395,17 @@
 @media (max-width: 768px) {
     .about-hero-images {
         min-height: 80vh;
+    }
+    
+    .hero-images-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .hero-image-left,
+    .hero-image-right {
+        max-width: 280px;
+        height: 250px;
     }
     
     .hero-mission-overlay {
@@ -425,6 +448,17 @@
 @media (max-width: 480px) {
     .about-hero-images {
         min-height: 70vh;
+    }
+    
+    .hero-images-container {
+        padding: 0.5rem;
+        gap: 0.8rem;
+    }
+    
+    .hero-image-left,
+    .hero-image-right {
+        max-width: 200px;
+        height: 180px;
     }
     
     .hero-mission-overlay {
