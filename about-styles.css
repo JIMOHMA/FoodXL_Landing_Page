@@ -1,53 +1,59 @@
 /* About Us Page Specific Styles */
 
-/* About Hero Section */
-.about-hero {
-    padding: 120px 0 80px;
-    background: #ffffff;
-    min-height: 70vh;
+/* Hero Section with Images */
+.about-hero-images {
+    position: relative;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
-.about-hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.hero-images-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+}
+
+.hero-image-left,
+.hero-image-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-left img,
+.hero-image-right img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-mission-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b5e20 100%);
+    color: white;
     text-align: center;
+    padding: 80px 0;
+    z-index: 2;
 }
 
-.about-title {
-    font-size: 3rem;
+.hero-mission-overlay h2 {
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 2rem;
-    color: #000000;
-}
-
-.about-subtitle {
-    font-size: 1.2rem;
-    color: #666666;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    max-width: 900px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.mission-statement {
-    background: #f8fdf9;
-    padding: 2rem;
-    border-radius: 12px;
-    border-left: 4px solid #95c8a0;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.mission-statement p {
-    font-size: 1.1rem;
-    color: #333333;
-    margin: 0;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 /* Navigation Active State */
@@ -85,81 +91,112 @@
     text-align: center;
 }
 
-.market-image {
-    background: #f8fdf9;
-    padding: 3rem;
+.flavor-visual img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 20px;
-    border: 2px solid #95c8a0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-.market-image p {
-    font-weight: 600;
-    color: #000000;
-    margin-top: 1rem;
-}
-
-/* Mission Bridge Section */
-.mission-bridge {
+/* Problem Section */
+.problem-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #2d6a4f 0%, #1b5e20 100%);
-    color: white;
-    text-align: center;
+    background: #ffffff;
 }
 
-.bridge-content h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.2;
-}
-
-.bridge-images {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.bridge-image {
-    width: 120px;
-    height: 120px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(10px);
-}
-
-/* Problem Solution Section */
-.problem-solution {
-    padding: 80px 0;
-    background: #f8fdf9;
-}
-
-.problem-block,
-.solution-block {
-    margin-bottom: 4rem;
-}
-
-.problem-content,
-.solution-content {
+.problem-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.solution-content {
-    grid-template-columns: 2fr 1fr;
+.problem-visual {
+    text-align: center;
 }
 
-.problem-badge,
+.problem-illustration {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #95c8a0 0%, #7db085 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 12px 48px rgba(149, 200, 160, 0.3);
+}
+
+.problem-illustration i {
+    font-size: 4rem;
+    color: white;
+}
+
+.problem-badge {
+    display: inline-block;
+    background: #95c8a0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.problem-text h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.problem-text p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Solution Section */
+.solution-section {
+    padding: 80px 0;
+    background: #f8fdf9;
+}
+
+.solution-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solution-visual {
+    text-align: center;
+}
+
+.solution-illustration {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b5e20 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 12px 48px rgba(45, 106, 79, 0.3);
+}
+
+.solution-illustration i {
+    font-size: 4rem;
+    color: white;
+}
+
 .solution-badge {
     display: inline-block;
     background: #95c8a0;
@@ -172,7 +209,6 @@
     text-transform: uppercase;
 }
 
-.problem-text h3,
 .solution-text h3 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -180,20 +216,10 @@
     color: #000000;
 }
 
-.problem-text p,
 .solution-text p {
     color: #666666;
     line-height: 1.6;
     font-size: 1.1rem;
-}
-
-.problem-visual,
-.solution-visual {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Our Story Extended Section */
@@ -252,48 +278,41 @@
 }
 
 .platform-mockup {
-    background: #8d4a4a;
-    border-radius: 20px;
-    padding: 2rem;
-    max-width: 300px;
+    position: relative;
+    max-width: 350px;
     margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
 }
 
-.mockup-header {
-    margin-bottom: 2rem;
+.mockup-content img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
-.mockup-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.mockup-dots span {
-    width: 12px;
-    height: 12px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-}
-
-.mockup-content {
-    background: white;
-    border-radius: 12px;
+.mockup-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);
+    color: white;
     padding: 2rem;
     text-align: center;
 }
 
-.mockup-content h4 {
+.mockup-overlay h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #000000;
     margin-bottom: 0.5rem;
 }
 
-.mockup-content p {
-    color: #666666;
+.mockup-overlay p {
     font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 /* Get In Touch Section */
@@ -322,6 +341,14 @@
 
 /* Responsive Design for About Page */
 @media (max-width: 968px) {
+    .hero-images-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-image-right {
+        display: none;
+    }
+    
     .flavor-content {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -341,30 +368,28 @@
         text-align: center;
     }
     
-    .bridge-images {
-        gap: 1.5rem;
+    .problem-illustration,
+    .solution-illustration {
+        width: 150px;
+        height: 150px;
     }
     
-    .bridge-image {
-        width: 100px;
-        height: 100px;
+    .problem-illustration i,
+    .solution-illustration i {
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 768px) {
-    .about-title {
-        font-size: 2.5rem;
+    .about-hero-images {
+        min-height: 80vh;
     }
     
-    .about-subtitle {
-        font-size: 1.1rem;
+    .hero-mission-overlay {
+        padding: 60px 0;
     }
     
-    .mission-statement {
-        padding: 1.5rem;
-    }
-    
-    .bridge-content h2 {
+    .hero-mission-overlay h2 {
         font-size: 2rem;
     }
     
@@ -381,63 +406,69 @@
         font-size: 2rem;
     }
     
-    .bridge-images {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .problem-illustration,
+    .solution-illustration {
+        width: 120px;
+        height: 120px;
     }
     
-    .bridge-image {
-        width: 80px;
-        height: 80px;
+    .problem-illustration i,
+    .solution-illustration i {
+        font-size: 2.5rem;
+    }
+    
+    .platform-mockup {
+        max-width: 300px;
     }
 }
 
 @media (max-width: 480px) {
-    .about-hero {
-        padding: 100px 0 60px;
+    .about-hero-images {
+        min-height: 70vh;
     }
     
-    .about-title {
-        font-size: 2rem;
+    .hero-mission-overlay {
+        padding: 40px 0;
     }
     
-    .about-subtitle {
-        font-size: 1rem;
-    }
-    
-    .mission-statement {
-        padding: 1rem;
-    }
-    
-    .mission-statement p {
-        font-size: 1rem;
+    .hero-mission-overlay h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
     .flavor-meets-scale,
-    .mission-bridge,
-    .problem-solution,
-    .our-story-extended,
+    .problem-section,
+    .solution-section,
     .platform-access,
     .get-in-touch {
         padding: 60px 0;
     }
     
-    .market-image {
-        padding: 2rem;
+    .flavor-visual img {
+        max-width: 300px;
+        height: 200px;
     }
     
-    .problem-visual,
-    .solution-visual {
-        padding: 1.5rem;
+    .problem-illustration,
+    .solution-illustration {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .problem-illustration i,
+    .solution-illustration i {
+        font-size: 2rem;
     }
     
     .platform-mockup {
-        padding: 1.5rem;
         max-width: 250px;
     }
     
-    .mockup-content {
+    .mockup-content img {
+        height: 180px;
+    }
+    
+    .mockup-overlay {
         padding: 1.5rem;
     }
 }
