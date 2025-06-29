@@ -22,7 +22,8 @@
     width: 100%;
 }
 
-.hero-image-left {
+.hero-image-left,
+.hero-image-right {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -32,12 +33,6 @@
 }
 
 .hero-image-right {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
-    flex: 1;
-    max-width: 400px;
     margin-top: 2rem;
 }
 
