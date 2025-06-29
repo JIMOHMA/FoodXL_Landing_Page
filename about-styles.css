@@ -3,8 +3,8 @@
 /* About Hero Section */
 .about-hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #f8fdf9 0%, #ffffff 100%);
-    min-height: 90vh;
+    background: #ffffff;
+    min-height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -13,67 +13,41 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    text-align: center;
 }
 
 .about-title {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #000000;
 }
 
 .about-subtitle {
     font-size: 1.2rem;
     color: #666666;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-hero-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.floating-card {
-    background: white;
-    padding: 1.5rem 2rem;
+.mission-statement {
+    background: #f8fdf9;
+    padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 280px;
+    border-left: 4px solid #95c8a0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.floating-card:hover {
-    transform: translateY(-8px);
-}
-
-.floating-card i {
-    font-size: 2rem;
-    color: #95c8a0;
-}
-
-.floating-card span {
-    font-weight: 600;
-    color: #000000;
-}
-
-.floating-card:nth-child(2) {
-    margin-left: 2rem;
-}
-
-.floating-card:nth-child(3) {
-    margin-left: 4rem;
+.mission-statement p {
+    font-size: 1.1rem;
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Navigation Active State */
@@ -87,292 +61,293 @@
     color: inherit;
 }
 
-/* Our Story Section */
-.our-story {
+/* Where Flavor Meets Scale Section */
+.flavor-meets-scale {
     padding: 80px 0;
     background: #ffffff;
 }
 
-.story-content {
+.flavor-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
-    align-items: start;
+    align-items: center;
 }
 
-.story-block {
+.flavor-description {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.flavor-visual {
+    text-align: center;
+}
+
+.market-image {
+    background: #f8fdf9;
+    padding: 3rem;
+    border-radius: 20px;
+    border: 2px solid #95c8a0;
+}
+
+.market-image p {
+    font-weight: 600;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+/* Mission Bridge Section */
+.mission-bridge {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b5e20 100%);
+    color: white;
+    text-align: center;
+}
+
+.bridge-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+}
+
+.bridge-images {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 3rem;
-    padding: 2rem;
-    background: #f8fdf9;
-    border-radius: 16px;
-    border-left: 4px solid #95c8a0;
 }
 
-.story-icon {
-    width: 60px;
-    height: 60px;
-    background: #95c8a0;
-    border-radius: 12px;
+.bridge-image {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    backdrop-filter: blur(10px);
 }
 
-.story-icon i {
-    font-size: 1.5rem;
+/* Problem Solution Section */
+.problem-solution {
+    padding: 80px 0;
+    background: #f8fdf9;
+}
+
+.problem-block,
+.solution-block {
+    margin-bottom: 4rem;
+}
+
+.problem-content,
+.solution-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solution-content {
+    grid-template-columns: 2fr 1fr;
+}
+
+.problem-badge,
+.solution-badge {
+    display: inline-block;
+    background: #95c8a0;
     color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
-.story-details h3 {
-    font-size: 1.4rem;
+.problem-text h3,
+.solution-text h3 {
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #000000;
 }
 
-.story-details p {
+.problem-text p,
+.solution-text p {
     color: #666666;
-    line-height: 1.6;
-}
-
-.story-visual {
-    position: sticky;
-    top: 120px;
-}
-
-.mission-card {
-    background: #000000;
-    color: white;
-    padding: 3rem;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.mission-card h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #95c8a0;
-}
-
-.mission-card p {
-    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     font-size: 1.1rem;
 }
 
-/* Perfect For Section */
-.perfect-for {
-    padding: 80px 0;
-    background: #f8fdf9;
-}
-
-.occasions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.occasion-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+.problem-visual,
+.solution-visual {
     text-align: center;
-    transition: all 0.3s ease;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.occasion-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-}
-
-.occasion-card i {
-    font-size: 3rem;
-    color: #95c8a0;
-    margin-bottom: 1.5rem;
-}
-
-.occasion-card h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #000000;
-}
-
-.occasion-card p {
-    color: #666666;
-    line-height: 1.6;
-}
-
-/* Our Values Section */
-.our-values {
+/* Our Story Extended Section */
+.our-story-extended {
     padding: 80px 0;
     background: #ffffff;
 }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-}
-
-.value-card {
-    padding: 3rem;
-    border-radius: 20px;
+.story-extended-content {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid #f0f0f0;
 }
 
-.value-card:hover {
-    border-color: #95c8a0;
-    transform: translateY(-5px);
-}
-
-.value-icon {
-    width: 80px;
-    height: 80px;
-    background: #95c8a0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 2rem;
-    transition: transform 0.3s ease;
-}
-
-.value-card:hover .value-icon {
-    transform: scale(1.1);
-}
-
-.value-icon i {
-    font-size: 2rem;
-    color: white;
-}
-
-.value-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+.story-narrative p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
+}
+
+.story-narrative p:last-child {
+    font-size: 1.2rem;
     color: #000000;
 }
 
-.value-card p {
-    color: #666666;
+/* Platform Access Section */
+.platform-access {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0e4d1 0%, #e8d5b7 100%);
+}
+
+.access-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.access-text h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #5d4037;
+    line-height: 1.3;
+}
+
+.access-text p {
+    font-size: 1.1rem;
+    color: #8d6e63;
     line-height: 1.6;
 }
 
-/* Environmental Impact Section */
-.environmental-impact {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #95c8a0 0%, #7db085 100%);
-    color: white;
-}
-
-.impact-content h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+.access-visual {
     text-align: center;
 }
 
-.impact-content > p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    opacity: 0.9;
-}
-
-.impact-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.impact-stat {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+.platform-mockup {
+    background: #8d4a4a;
+    border-radius: 20px;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
 }
 
-.impact-stat i {
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.9);
+.mockup-header {
+    margin-bottom: 2rem;
 }
 
-.impact-stat h4 {
-    font-size: 1.3rem;
+.mockup-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.mockup-dots span {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.mockup-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.mockup-content h4 {
+    font-size: 1.2rem;
     font-weight: 600;
+    color: #000000;
     margin-bottom: 0.5rem;
 }
 
-.impact-stat p {
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.5;
+.mockup-content p {
+    color: #666666;
+    font-size: 0.9rem;
 }
 
-/* Join Us Section */
-.join-us {
+/* Get In Touch Section */
+.get-in-touch {
     padding: 80px 0;
-    background: #000000;
-    color: white;
+    background: linear-gradient(135deg, #a8e6cf 0%, #88d8a3 100%);
     text-align: center;
 }
 
-.join-content h2 {
+.touch-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color: #2d5016;
 }
 
-.join-content p {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    color: rgba(255, 255, 255, 0.8);
+.touch-content p {
+    font-size: 1.1rem;
+    color: #2d5016;
+    margin-bottom: 2.5rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.join-actions {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.join-actions .cta-button {
-    min-width: 200px;
+    line-height: 1.6;
 }
 
 /* Responsive Design for About Page */
 @media (max-width: 968px) {
-    .about-hero-container {
+    .flavor-content {
         grid-template-columns: 1fr;
         gap: 3rem;
         text-align: center;
     }
     
-    .story-content {
+    .problem-content,
+    .solution-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .access-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+        text-align: center;
     }
     
-    .story-visual {
-        position: static;
+    .bridge-images {
+        gap: 1.5rem;
     }
     
-    .floating-card:nth-child(2),
-    .floating-card:nth-child(3) {
-        margin-left: 0;
+    .bridge-image {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -385,36 +360,36 @@
         font-size: 1.1rem;
     }
     
-    .story-block {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
+    .mission-statement {
+        padding: 1.5rem;
     }
     
-    .story-icon {
-        margin: 0 auto;
+    .bridge-content h2 {
+        font-size: 2rem;
     }
     
-    .values-grid {
-        grid-template-columns: 1fr;
+    .problem-text h3,
+    .solution-text h3 {
+        font-size: 1.5rem;
     }
     
-    .impact-stats {
-        grid-template-columns: 1fr;
+    .access-text h2 {
+        font-size: 1.8rem;
     }
     
-    .impact-stat {
-        flex-direction: column;
-        text-align: center;
+    .touch-content h2 {
+        font-size: 2rem;
     }
     
-    .join-actions {
+    .bridge-images {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
     
-    .occasions-grid {
-        grid-template-columns: 1fr;
+    .bridge-image {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -427,17 +402,42 @@
         font-size: 2rem;
     }
     
-    .mission-card,
-    .value-card,
-    .occasion-card {
+    .about-subtitle {
+        font-size: 1rem;
+    }
+    
+    .mission-statement {
+        padding: 1rem;
+    }
+    
+    .mission-statement p {
+        font-size: 1rem;
+    }
+    
+    .flavor-meets-scale,
+    .mission-bridge,
+    .problem-solution,
+    .our-story-extended,
+    .platform-access,
+    .get-in-touch {
+        padding: 60px 0;
+    }
+    
+    .market-image {
         padding: 2rem;
     }
     
-    .floating-card {
-        padding: 1rem 1.5rem;
+    .problem-visual,
+    .solution-visual {
+        padding: 1.5rem;
     }
     
-    .story-block {
+    .platform-mockup {
+        padding: 1.5rem;
+        max-width: 250px;
+    }
+    
+    .mockup-content {
         padding: 1.5rem;
     }
 }
