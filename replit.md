@@ -26,6 +26,7 @@ The landing page serves as a marketing tool to attract potential customers and v
 - Mobile-responsive hamburger menu
 - Backdrop blur effect for modern aesthetics
 - Dynamic background changes on scroll
+- Cross-page navigation between Home and About Us
 
 ### Hero Section
 - Compelling headline and sub-headline
@@ -39,6 +40,7 @@ The landing page serves as a marketing tool to attract potential customers and v
 3. **Environmental Benefits**: Sustainability messaging
 4. **Vendor Partnership**: Information for potential business partners
 5. **FAQ**: Common questions and answers
+6. **About Us Page**: Dedicated page with company story, mission, and values
 
 ### Interactive Elements
 - Waitlist modal/signup form
@@ -94,3 +96,4 @@ Preferred communication style: Simple, everyday language.
 
 Changelog:
 - June 24, 2025. Initial setup
+- June 29, 2025. Added dedicated About Us page with company story, mission, values, and environmental impact sections. Enhanced navigation to support multi-page structure.

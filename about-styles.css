@@ -1,0 +1,467 @@
+/* About Us Page Specific Styles */
+
+/* About Hero Section */
+.about-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f8fdf9 0%, #ffffff 100%);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.about-hero-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.floating-card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+}
+
+.floating-card:hover {
+    transform: translateY(-8px);
+}
+
+.floating-card i {
+    font-size: 2rem;
+    color: #95c8a0;
+}
+
+.floating-card span {
+    font-weight: 600;
+    color: #000000;
+}
+
+.floating-card:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.floating-card:nth-child(3) {
+    margin-left: 4rem;
+}
+
+/* Navigation Active State */
+.nav-link.active {
+    color: #95c8a0;
+    font-weight: 600;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.story-block {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #f8fdf9;
+    border-radius: 16px;
+    border-left: 4px solid #95c8a0;
+}
+
+.story-icon {
+    width: 60px;
+    height: 60px;
+    background: #95c8a0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.story-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.story-details h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.story-details p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.story-visual {
+    position: sticky;
+    top: 120px;
+}
+
+.mission-card {
+    background: #000000;
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.mission-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #95c8a0;
+}
+
+.mission-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Perfect For Section */
+.perfect-for {
+    padding: 80px 0;
+    background: #f8fdf9;
+}
+
+.occasions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.occasion-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.occasion-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.occasion-card i {
+    font-size: 3rem;
+    color: #95c8a0;
+    margin-bottom: 1.5rem;
+}
+
+.occasion-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.occasion-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Our Values Section */
+.our-values {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.value-card {
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.value-card:hover {
+    border-color: #95c8a0;
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: #95c8a0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    transform: scale(1.1);
+}
+
+.value-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.value-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Environmental Impact Section */
+.environmental-impact {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #95c8a0 0%, #7db085 100%);
+    color: white;
+}
+
+.impact-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.impact-content > p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.impact-stat {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.impact-stat i {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.impact-stat h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.impact-stat p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Join Us Section */
+.join-us {
+    padding: 80px 0;
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+.join-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.join-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-actions {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.join-actions .cta-button {
+    min-width: 200px;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 968px) {
+    .about-hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .story-visual {
+        position: static;
+    }
+    
+    .floating-card:nth-child(2),
+    .floating-card:nth-child(3) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .story-block {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .story-icon {
+        margin: 0 auto;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-stat {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .join-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .occasions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .mission-card,
+    .value-card,
+    .occasion-card {
+        padding: 2rem;
+    }
+    
+    .floating-card {
+        padding: 1rem 1.5rem;
+    }
+    
+    .story-block {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation Enhancements */
+@media (prefers-reduced-motion: no-preference) {
+    .floating-card {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    .floating-card:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    
+    .floating-card:nth-child(3) {
+        animation-delay: 1s;
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}

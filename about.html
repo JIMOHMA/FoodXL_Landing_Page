@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FoodXL | Bulk Food Ordering Made Simple</title>
+    <meta name="description" content="Learn about FoodXL's mission to make bulk food ordering effortless. Connecting you to everyday meals, pastries, and event food solutions through trusted vendors.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>FoodXL</h2></a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                <a href="index.html#benefits" class="nav-link">Benefits</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <button class="cta-button nav-cta" onclick="openWaitlistModal()">Join Waitlist</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-container">
+            <div class="about-hero-content">
+                <h1 class="about-title">Where Bulk Meets Convenience</h1>
+                <p class="about-subtitle">FoodXL connects you to everyday meals, pastries, and full-scale event food solutions through trusted vendors, making bulk food discovery, delivery, and celebration effortless.</p>
+                <button class="cta-button primary" onclick="openWaitlistModal()">
+                    <i class="fas fa-bell"></i>
+                    Join Our Journey
+                </button>
+            </div>
+            <div class="about-hero-visual">
+                <div class="floating-card">
+                    <i class="fas fa-utensils"></i>
+                    <span>Everyday Meals</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Pastries & Sweets</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Event Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <div class="story-block">
+                        <div class="story-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="story-details">
+                            <h3>The Problem We Saw</h3>
+                            <p>We noticed that ordering food in bulk was complicated, time-consuming, and often unreliable. Whether planning a celebration, meal prepping for the week, or feeding a crowd, people struggled to find trusted vendors who could deliver quality food in practical quantities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block">
+                        <div class="story-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="story-details">
+                            <h3>Our Solution</h3>
+                            <p>FoodXL was born from the need to make bulk food ordering effortless. We've created a multi-vendor platform that connects you to trusted food providers, offering everything from soups and stews to rice dishes and beverages—all available in practical liter-based quantities.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-visual">
+                    <div class="mission-card">
+                        <h3>Our Mission</h3>
+                        <p>To make bulk food discovery, delivery, and celebration effortless for everyone—from dinner parties and special events to family meals and business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfect For Section -->
+    <section class="perfect-for">
+        <div class="container">
+            <h2 class="section-title">Perfect For Every Occasion</h2>
+            <div class="occasions-grid">
+                <div class="occasion-card">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Dinner Parties</h3>
+                    <p>Impress your guests with quality meals delivered in perfect quantities</p>
+                </div>
+                <div class="occasion-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Special Events</h3>
+                    <p>Weddings, birthdays, and celebrations made stress-free with reliable vendors</p>
+                </div>
+                <div class="occasion-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Family Meals</h3>
+                    <p>Weekly meal prep and family gatherings with consistent quality and taste</p>
+                </div>
+                <div class="occasion-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business Needs</h3>
+                    <p>Corporate events, office meetings, and team lunches delivered seamlessly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="our-values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Responsibility</h3>
+                    <p>We're committed to reducing packaging waste and carbon footprint through bulk ordering. Our platform supports sustainable practices and helps minimize food waste through efficient meal planning.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Vendor Partnership</h3>
+                    <p>We empower local vendors by connecting them with bulk buyers, providing seamless order management, and helping them grow their business with increased traffic and pricing control.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality & Trust</h3>
+                    <p>Every vendor on our platform is carefully vetted to ensure consistent quality, reliability, and exceptional service for every order, big or small.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact Section -->
+    <section class="environmental-impact">
+        <div class="container">
+            <div class="impact-content">
+                <div class="impact-text">
+                    <h2>Good for You, Better for the Planet</h2>
+                    <p>At FoodXL, we believe bulk ordering isn't just convenient—it's a step toward a more sustainable future.</p>
+                    
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4>Less Packaging Waste</h4>
+                                <p>Bulk orders minimize individual packaging materials</p>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-stat">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h4>Fewer Deliveries</h4>
+                                <p>Reduced fuel consumption and carbon emissions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-stat">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <h4>Sustainable Sourcing</h4>
+                                <p>Partners who prioritize responsible ingredient sourcing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us">
+        <div class="container">
+            <div class="join-content">
+                <h2>Be Part of the Bulk Revolution</h2>
+                <p>Whether you're a food lover looking for convenient bulk ordering or a vendor wanting to expand your reach, FoodXL is here to make it happen.</p>
+                
+                <div class="join-actions">
+                    <button class="cta-button primary" onclick="openWaitlistModal()">
+                        <i class="fas fa-users"></i>
+                        Join as Customer
+                    </button>
+                    <button class="cta-button secondary" onclick="openPartnerModal()">
+                        <i class="fas fa-store"></i>
+                        Become a Partner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>FoodXL</h3>
+                    <p>Bulk food ordering made simple. From everyday meals to special events, we've got you covered.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="#careers">Careers</a>
+                        <a href="#press">Press</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#help">Help Center</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodXL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Waitlist Modal -->
+    <div id="waitlistModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join the FoodXL Waitlist</h3>
+                <span class="close" onclick="closeWaitlistModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Be among the first to experience bulk food ordering like never before!</p>
+                <form id="waitlistForm" onsubmit="submitWaitlistForm(event)">
+                    <div class="form-group">
+                        <label for="waitlist-email">Email Address</label>
+                        <input type="email" id="waitlist-email" name="email" required>
+                    </div>
+                    <button type="submit" class="cta-button full-width">
+                        <i class="fas fa-bell"></i>
+                        Join Waitlist
+                    </button>
+                </form>
+                
+                <div id="waitlistSuccess" class="success-message" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Thank you for joining our waitlist! We'll notify you when FoodXL launches.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Modal -->
+    <div id="partnerModal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h3>Become a FoodXL Partner</h3>
+                <span class="close" onclick="closePartnerModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Join our network of trusted vendors and grow your business with bulk orders!</p>
+                <form id="partnerForm" onsubmit="submitPartnerForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-firstName">First Name</label>
+                            <input type="text" id="partner-firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-lastName">Last Name</label>
+                            <input type="text" id="partner-lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="partner-email">Email Address</label>
+                            <input type="email" id="partner-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-phone">Phone Number</label>
+                            <input type="tel" id="partner-phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="partner-businessName">Business Name</label>
+                        <input type="text" id="partner-businessName" name="businessName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="partner-businessAddress">Business Address</label>
+                        <textarea id="partner-businessAddress" name="businessAddress" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="partner-localCouncil">Local Council</label>
+                        <input type="text" id="partner-localCouncil" name="localCouncil" required>
+                    </div>
+                    
+                    <button type="submit" class="cta-button full-width">
+                        <i class="fas fa-handshake"></i>
+                        Submit Application
+                    </button>
+                </form>
+                
+                <div id="partnerSuccess" class="success-message" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Thank you for your interest! We'll review your application and get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
